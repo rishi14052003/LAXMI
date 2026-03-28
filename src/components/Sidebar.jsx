@@ -32,7 +32,7 @@ const Sidebar = ({
       <div className="flex items-center justify-between h-16 px-6 border-b">
         <div className="flex items-center space-x-3">
           <img 
-            src="/laxmi-sarees-logo.png" 
+            src="/laxmi-logo.png" 
             alt="Laxmi Sarees Logo" 
             className="h-8 w-auto"
             onError={(e) => {

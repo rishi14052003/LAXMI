@@ -52,7 +52,7 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-3 mb-4">
               <img 
-                src="/laxmi-sarees-logo.png" 
+                src="/laxmi-logo.png" 
                 alt="Laxmi Sarees Logo" 
                 className="h-10 w-auto"
                 onError={(e) => {

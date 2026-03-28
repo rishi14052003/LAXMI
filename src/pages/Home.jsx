@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import CategoryCard from '../components/CategoryCard';
 import ProductCard from '../components/ProductCard';
+import Footer from '../components/Footer';
 import { categories } from '../data/categories';
 import { getFeaturedSarees } from '../data/sarees';
 import { ArrowRight, Sparkles, Search, ShoppingCart, Heart, User, Menu, X, ShoppingBag } from 'lucide-react';
@@ -32,7 +33,7 @@ const Home = () => {
             <div className="flex items-center">
               <div className="flex items-center space-x-3">
                 <img 
-                  src="/laxmi-sarees-logo.png" 
+                  src="/laxmi-logo.png" 
                   alt="Laxmi Sarees Logo" 
                   className="h-8 w-auto"
                   onError={(e) => {
@@ -207,37 +208,6 @@ const Home = () => {
               View All Products
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Features Section */}
-      <section className="py-16 px-4 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Sparkles className="h-8 w-8 text-primary-600" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Premium Quality</h3>
-              <p className="text-gray-600">Finest fabrics and craftsmanship in every saree</p>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-16 h-16 bg-gold-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Sparkles className="h-8 w-8 text-gold-600" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Traditional Designs</h3>
-              <p className="text-gray-600">Authentic patterns that celebrate Indian heritage</p>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Sparkles className="h-8 w-8 text-green-600" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Worldwide Shipping</h3>
-              <p className="text-gray-600">Delivering elegance to your doorstep globally</p>
-            </div>
           </div>
         </div>
       </section>
