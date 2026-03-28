@@ -8,9 +8,7 @@ export const sarees = [
     price: 8500,
     description: 'Elegant royal blue pure silk saree with golden border and intricate traditional patterns',
     image: '/images/silk/royal-blue.jpg',
-    featured: true,
-    inStock: true,
-    rating: 4.5
+    inStock: true
   },
   {
     id: 'silk-002',
@@ -20,10 +18,8 @@ export const sarees = [
     price: 9200,
     description: 'Stunning ruby red silk saree with intricate zari work and peacock motifs',
     image: '/images/silk/ruby-red.jpg',
-    featured: true,
-    inStock: true,
-    rating: 4.8
-  },
+        inStock: true,
+      },
   {
     id: 'silk-003',
     name: 'Emerald Green Silk',
@@ -32,9 +28,7 @@ export const sarees = [
     price: 7800,
     description: 'Beautiful emerald green silk with silver motifs and traditional border design',
     image: '/images/silk/emerald-green.jpg',
-    featured: false,
-    inStock: true,
-    rating: 4.2
+    inStock: true
   },
   {
     id: 'silk-004',
@@ -44,10 +38,8 @@ export const sarees = [
     price: 6500,
     description: 'Timeless black silk saree with gold border and minimal elegant design',
     image: '/images/silk/classic-black.jpg',
-    featured: false,
-    inStock: true,
-    rating: 4.6
-  },
+        inStock: true,
+      },
   {
     id: 'silk-005',
     name: 'Maroon Velvet Silk',
@@ -56,10 +48,8 @@ export const sarees = [
     price: 12000,
     description: 'Luxurious maroon velvet silk with heavy embroidery and stone work',
     image: '/images/silk/maroon-velvet.jpg',
-    featured: true,
-    inStock: false,
-    rating: 4.9
-  },
+        inStock: false,
+      },
 
   // Cotton Sarees
   {
@@ -70,10 +60,8 @@ export const sarees = [
     price: 2200,
     description: 'Light and comfortable yellow cotton saree perfect for summer with block print',
     image: '/images/cotton/summer-yellow.jpg',
-    featured: true,
-    inStock: true,
-    rating: 4.1
-  },
+        inStock: true,
+      },
   {
     id: 'cotton-002',
     name: 'Floral Print Cotton',
@@ -82,10 +70,8 @@ export const sarees = [
     price: 1800,
     description: 'Vibrant floral print cotton saree perfect for casual daily wear',
     image: '/images/cotton/floral-print.jpg',
-    featured: true,
-    inStock: true,
-    rating: 3.9
-  },
+        inStock: true,
+      },
   {
     id: 'cotton-003',
     name: 'Navy Blue Cotton',
@@ -94,10 +80,8 @@ export const sarees = [
     price: 2500,
     description: 'Elegant navy blue cotton with white border and subtle patterns',
     image: '/images/cotton/navy-blue.jpg',
-    featured: false,
-    inStock: true,
-    rating: 4.3
-  },
+        inStock: true,
+      },
   {
     id: 'cotton-004',
     name: 'Pastel Pink Cotton',
@@ -106,10 +90,8 @@ export const sarees = [
     price: 2800,
     description: 'Soft pastel pink cotton silk blend saree with delicate embroidery',
     image: '/images/cotton/pastel-pink.jpg',
-    featured: false,
-    inStock: true,
-    rating: 4.4
-  },
+        inStock: true,
+      },
   {
     id: 'cotton-005',
     name: 'White Khadi Cotton',
@@ -118,10 +100,8 @@ export const sarees = [
     price: 3200,
     description: 'Handloom white khadi cotton with traditional hand block printing',
     image: '/images/cotton/white-khadi.jpg',
-    featured: true,
-    inStock: true,
-    rating: 4.7
-  },
+        inStock: true,
+      },
 
   // Bridal Collection
   {
@@ -132,10 +112,8 @@ export const sarees = [
     price: 25000,
     description: 'Magnificent bridal saree with heavy gold zari work and traditional motifs',
     image: '/images/bridal/royal-ensemble.jpg',
-    featured: true,
-    inStock: true,
-    rating: 4.9
-  },
+        inStock: true,
+      },
   {
     id: 'bridal-002',
     name: 'Crimson Bridal Silk',
@@ -144,10 +122,8 @@ export const sarees = [
     price: 32000,
     description: 'Traditional crimson bridal silk with intricate patterns and gold border',
     image: '/images/bridal/crimson-silk.jpg',
-    featured: true,
-    inStock: true,
-    rating: 5.0
-  },
+        inStock: true,
+      },
   {
     id: 'bridal-003',
     name: 'Golden Heritage Bridal',
@@ -156,10 +132,8 @@ export const sarees = [
     price: 28000,
     description: 'Heritage Banarasi bridal saree with gold work and meenakari details',
     image: '/images/bridal/golden-heritage.jpg',
-    featured: false,
-    inStock: true,
-    rating: 4.8
-  },
+        inStock: true,
+      },
   {
     id: 'bridal-004',
     name: 'Pink Bridal Wonder',
@@ -168,10 +142,8 @@ export const sarees = [
     price: 22000,
     description: 'Traditional Rajasthani bandhani bridal saree with mirror work',
     image: '/images/bridal/pink-bandhani.jpg',
-    featured: true,
-    inStock: false,
-    rating: 4.6
-  },
+        inStock: false,
+      },
 
   // Designer Collection
   {
@@ -182,10 +154,8 @@ export const sarees = [
     price: 5500,
     description: 'Contemporary abstract print designer saree with modern artistic patterns',
     image: '/images/designer/abstract-print.jpg',
-    featured: true,
-    inStock: true,
-    rating: 4.2
-  },
+        inStock: true,
+      },
   {
     id: 'designer-002',
     name: 'Ombre Designer Saree',
@@ -194,10 +164,8 @@ export const sarees = [
     price: 4800,
     description: 'Elegant ombre effect designer chiffon saree with gradient colors',
     image: '/images/designer/ombre-effect.jpg',
-    featured: true,
-    inStock: true,
-    rating: 4.0
-  },
+        inStock: true,
+      },
   {
     id: 'designer-003',
     name: 'Metallic Designer Wear',
@@ -206,10 +174,8 @@ export const sarees = [
     price: 6200,
     description: 'Stunning metallic finish designer saree with contemporary styling',
     image: '/images/designer/metallic-finish.jpg',
-    featured: false,
-    inStock: true,
-    rating: 4.3
-  },
+        inStock: true,
+      },
   {
     id: 'designer-004',
     name: 'Fusion Contemporary',
@@ -218,18 +184,12 @@ export const sarees = [
     price: 7500,
     description: 'Modern fusion wear combining net and silk with designer embroidery',
     image: '/images/designer/fusion-contemporary.jpg',
-    featured: true,
-    inStock: true,
-    rating: 4.5
+    inStock: true
   }
 ];
 
 export const getSareesByCategory = (category) => {
   return sarees.filter(saree => saree.category === category);
-};
-
-export const getFeaturedSarees = () => {
-  return sarees.filter(saree => saree.featured);
 };
 
 export const getSareeById = (id) => {

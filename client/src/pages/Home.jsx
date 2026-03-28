@@ -4,14 +4,14 @@ import CategoryCard from '../components/CategoryCard';
 import ProductCard from '../components/ProductCard';
 import Footer from '../components/Footer';
 import { categories } from '../data/categories';
-import { getFeaturedSarees } from '../data/sarees';
+import { sarees } from '../data/sarees';
 import { ArrowRight, Sparkles, Search, ShoppingCart, Heart, User, Menu, X, ShoppingBag } from 'lucide-react';
 
 const Home = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
-  const featuredCategories = categories.filter(cat => cat.featured);
-  const featuredSarees = getFeaturedSarees();
+  const displayCategories = categories.slice(0, 4);
+  const displaySarees = sarees.slice(0, 8);
 
   const customerMenuItems = [
     { id: 'home', label: 'Home', icon: ShoppingBag },
@@ -152,7 +152,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Featured Categories */}
+      {/* Categories */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
@@ -165,7 +165,7 @@ const Home = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {featuredCategories.map((category) => (
+            {displayCategories.map((category) => (
               <CategoryCard key={category.id} category={category} />
             ))}
           </div>
@@ -182,20 +182,20 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Featured Products */}
+      {/* Products */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-playfair font-bold text-gray-900 mb-4">
-              Featured Sarees
+              Latest Sarees
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Handpicked favorites from our latest collection
+              Explore our latest collection of beautiful sarees
             </p>
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {featuredSarees.slice(0, 8).map((saree) => (
+            {displaySarees.map((saree) => (
               <ProductCard key={saree.id} saree={saree} />
             ))}
           </div>

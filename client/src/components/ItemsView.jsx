@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Search, Filter, Grid, List, Star, Heart, ShoppingCart, Eye, IndianRupee } from 'lucide-react';
+import { Search, Filter, Grid, List, Heart, ShoppingCart, Eye, IndianRupee } from 'lucide-react';
 
 const ItemsView = ({ category, items, onBack }) => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -7,8 +7,7 @@ const ItemsView = ({ category, items, onBack }) => {
   const [viewMode, setViewMode] = useState('grid');
   const [priceRange, setPriceRange] = useState({ min: 0, max: 50000 });
   const [selectedFilters, setSelectedFilters] = useState({
-    inStock: true,
-    featured: false
+    inStock: true
   });
 
   const filteredItems = items.filter(item => {
@@ -16,9 +15,8 @@ const ItemsView = ({ category, items, onBack }) => {
                          item.description.toLowerCase().includes(searchTerm.toLowerCase());
     const matchesPrice = item.price >= priceRange.min && item.price <= priceRange.max;
     const matchesStock = !selectedFilters.inStock || item.inStock;
-    const matchesFeatured = !selectedFilters.featured || item.featured;
     
-    return matchesSearch && matchesPrice && matchesStock && matchesFeatured;
+    return matchesSearch && matchesPrice && matchesStock;
   });
 
   const sortedItems = [...filteredItems].sort((a, b) => {
@@ -29,8 +27,6 @@ const ItemsView = ({ category, items, onBack }) => {
         return b.price - a.price;
       case 'name':
         return a.name.localeCompare(b.name);
-      case 'rating':
-        return (b.rating || 0) - (a.rating || 0);
       default:
         return 0;
     }
@@ -82,20 +78,6 @@ const ItemsView = ({ category, items, onBack }) => {
             <span className="text-lg font-bold text-gray-900 ml-1">
               {item.price.toLocaleString('en-IN')}
             </span>
-          </div>
-          
-          <div className="flex items-center">
-            <div className="flex items-center">
-              {[...Array(5)].map((_, i) => (
-                <Star
-                  key={i}
-                  className={`h-4 w-4 ${
-                    i < (item.rating || 4) ? 'text-yellow-400 fill-current' : 'text-gray-300'
-                  }`}
-                />
-              ))}
-            </div>
-            <span className="text-xs text-gray-500 ml-1">({item.rating || 4.0})</span>
           </div>
         </div>
         
@@ -153,17 +135,6 @@ const ItemsView = ({ category, items, onBack }) => {
                   {item.price.toLocaleString('en-IN')}
                 </span>
               </div>
-              <div className="flex items-center justify-end">
-                {[...Array(5)].map((_, i) => (
-                  <Star
-                    key={i}
-                    className={`h-4 w-4 ${
-                      i < (item.rating || 4) ? 'text-yellow-400 fill-current' : 'text-gray-300'
-                    }`}
-                  />
-                ))}
-                <span className="text-xs text-gray-500 ml-1">({item.rating || 4.0})</span>
-              </div>
             </div>
           </div>
           
@@ -176,11 +147,6 @@ const ItemsView = ({ category, items, onBack }) => {
               }`}>
                 {item.inStock ? 'In Stock' : 'Out of Stock'}
               </span>
-              {item.featured && (
-                <span className="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs font-medium">
-                  Featured
-                </span>
-              )}
             </div>
             
             <div className="flex space-x-2">
@@ -246,7 +212,6 @@ const ItemsView = ({ category, items, onBack }) => {
                 <option value="name">Sort by Name</option>
                 <option value="price-low">Price: Low to High</option>
                 <option value="price-high">Price: High to Low</option>
-                <option value="rating">Highest Rated</option>
               </select>
               
               <div className="flex items-center space-x-2 border border-gray-300 rounded-lg p-1">
