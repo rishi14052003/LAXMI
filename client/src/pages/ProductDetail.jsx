@@ -2,7 +2,6 @@ import { useParams, Link } from 'react-router-dom';
 import { useState } from 'react';
 import { getSareeById, getSareesByCategory } from '../data/sarees';
 import { categories } from '../data/categories';
-import WhatsAppButton from '../components/WhatsAppButton';
 import { 
   ArrowLeft, 
   Star, 
@@ -45,12 +44,6 @@ const ProductDetail = () => {
     `${saree.image}?variant=3`,
     `${saree.image}?variant=4`
   ];
-
-  const handleWhatsAppInquiry = () => {
-    const message = `Hi! I'm interested in this saree: ${saree.name} (ID: ${saree.id}). Please provide more details.`;
-    const whatsappUrl = `https://wa.me/919876543210?text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, '_blank');
-  };
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -195,18 +188,11 @@ const ProductDetail = () => {
               >
                 {saree.inStock ? 'Inquire on WhatsApp' : 'Out of Stock'}
               </button>
-              
-              <WhatsAppButton 
-                phoneNumber="919876543210"
-                message={`Hi! I'm interested in ${saree.name} (ID: ${saree.id})`}
-                className="w-full"
-              />
-            </div>
-
-            {/* Features */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 py-6 border-t border-b">
-              <div className="flex items-center space-x-2">
-                <Truck className="h-5 w-5 text-gray-400" />
+              disabled={!saree.inStock}
+                className="w-full bg-gradient-to-r from-pink-600 to-purple-600 text-white font-semibold py-3 rounded-lg hover:shadow-lg transform hover:scale-105 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                {saree.inStock ? 'View Details' : 'Out of Stock'}
+              </button <Truck className="h-5 w-5 text-gray-400" />
                 <div>
                   <p className="text-sm font-medium text-gray-900">Free Shipping</p>
                   <p className="text-xs text-gray-500">On orders above ₹2000</p>

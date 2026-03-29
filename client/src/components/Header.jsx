@@ -1,6 +1,6 @@
 import { Menu, Bell, Search } from 'lucide-react';
 
-const Header = ({ sidebarOpen, setSidebarOpen }) => {
+const Header = ({ setSidebarOpen }) => {
   return (
     <header className="bg-white shadow-sm border-b">
       <div className="px-4 sm:px-6 lg:px-8">

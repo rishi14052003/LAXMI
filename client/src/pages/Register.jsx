@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import { useAuth } from '../context/AuthContext';
+import { useAuth } from '../hooks/useAuth';
 import { Mail, Lock, User, AlertCircle, CheckCircle } from 'lucide-react';
 
 const Register = () => {
@@ -72,7 +72,7 @@ const Register = () => {
       } else {
         setError(result.error || 'Registration failed');
       }
-    } catch (err) {
+    } catch {
       setError('An error occurred. Please try again.');
     } finally {
       setLoading(false);
@@ -85,7 +85,7 @@ const Register = () => {
         {/* Header */}
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent mb-2">
-            LAXMI
+            Laxmi Sarees
           </h1>
           <p className="text-gray-600 font-medium">Premium Saree Catalog</p>
         </div>

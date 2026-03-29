@@ -1,6 +1,21 @@
 import { Facebook, Instagram, Twitter, Mail, Phone, MapPin, Clock } from 'lucide-react';
 
 const Footer = () => {
+  const partners = [
+    {
+      name: 'Priya Sharma',
+      role: 'Regional Manager',
+      phone: '+91 9876543210',
+      email: 'priya@laxmisarees.com'
+    },
+    {
+      name: 'Rajesh Patel',
+      role: 'Sales Lead',
+      phone: '+91 9876543211',
+      email: 'rajesh@laxmisarees.com'
+    }
+  ];
+
   const shopInfo = {
     name: "Laxmi Sarees",
     address: "123 Fashion Street, Market Area, New Delhi - 110001, India",
