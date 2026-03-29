@@ -14,7 +14,7 @@ const QuickActions = () => {
     },
     {
       icon: BarChart3,
-      iconColor: 'text-purple-600',
+      iconColor: 'text-amber-600',
       title: 'View Reports'
     },
     {

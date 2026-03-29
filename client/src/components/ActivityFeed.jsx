@@ -18,8 +18,8 @@ const ActivityFeed = () => {
     },
     {
       icon: Package,
-      iconColor: 'bg-purple-100',
-      iconBgColor: 'text-purple-600',
+      iconColor: 'bg-amber-100',
+      iconBgColor: 'text-amber-600',
       title: 'Product updated successfully',
       time: '1 hour ago'
     }

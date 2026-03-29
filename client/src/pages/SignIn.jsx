@@ -31,11 +31,11 @@ const SignIn = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-pink-50 via-white to-purple-50 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-br from-red-900 via-amber-600 to-yellow-500 flex items-center justify-center p-4">
       <div className="w-full max-w-md">
         {/* Header */}
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent mb-2">
+          <h1 className="text-4xl font-bold bg-gradient-to-r from-amber-600 to-red-900 bg-clip-text text-transparent mb-2">
             Laxmi Sarees
           </h1>
           <p className="text-gray-600 font-medium">Premium Saree Catalog</p>
@@ -73,7 +73,7 @@ const SignIn = () => {
                   value={username}
                   onChange={(e) => setUsername(e.target.value)}
                   placeholder="Enter your username"
-                  className="w-full pl-10 pr-4 py-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-pink-500 transition-colors"
+                  className="w-full pl-10 pr-4 py-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-amber-600 transition-colors"
                   required
                 />
               </div>
@@ -92,7 +92,7 @@ const SignIn = () => {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   placeholder="Enter your password"
-                  className="w-full pl-10 pr-4 py-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-pink-500 transition-colors"
+                  className="w-full pl-10 pr-4 py-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-amber-600 transition-colors"
                   required
                 />
               </div>
@@ -102,34 +102,27 @@ const SignIn = () => {
             <button
               type="submit"
               disabled={loading}
-              className="w-full bg-gradient-to-r from-pink-600 to-purple-600 text-white font-semibold py-3 rounded-lg hover:shadow-lg transform hover:scale-105 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full bg-gradient-to-r from-red-900 to-amber-600 text-white font-semibold py-3 rounded-lg hover:shadow-lg transform hover:scale-105 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {loading ? 'Signing In...' : 'Sign In'}
             </button>
           </form>
 
-          {/* Divider */}
-          <div className="relative">
-            <div className="absolute inset-0 flex items-center">
-              <div className="w-full border-t-2 border-gray-200"></div>
-            </div>
-            <div className="relative flex justify-center text-sm">
-              <span className="px-2 bg-white text-gray-500">New to Laxmi Sarees?</span>
-            </div>
+          {/* Sign Up Link */}
+          <div className="flex justify-center items-center gap-2 pt-2">
+            <span className="text-gray-600 font-medium">You are new here?</span>
+            <Link
+              to="/register"
+              className="text-red-900 font-semibold hover:text-amber-600 transition-colors duration-200 underline underline-offset-4 hover:underline-offset-2"
+            >
+              Create Account
+            </Link>
           </div>
-
-          {/* Register Link */}
-          <Link
-            to="/register"
-            className="w-full border-2 border-gray-300 text-gray-900 font-semibold py-3 rounded-lg hover:bg-gray-50 transition-colors text-center"
-          >
-            Create Account
-          </Link>
         </div>
 
         {/* Footer */}
         <div className="text-center mt-6 text-sm text-gray-600">
-          <p>By signing in, you agree to our <a href="#" className="text-pink-600 hover:underline">Terms of Service</a></p>
+          <p>By signing in, you agree to our <a href="#" className="text-red-900 hover:text-amber-600 hover:underline">Terms of Service</a></p>
         </div>
       </div>
     </div>

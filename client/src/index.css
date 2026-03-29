@@ -2,16 +2,16 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary-50: #fdf2f8;
-  --color-primary-100: #fce7f3;
-  --color-primary-200: #fbcfe8;
-  --color-primary-300: #f9a8d4;
-  --color-primary-400: #f472b6;
-  --color-primary-500: #ec4899;
-  --color-primary-600: #db2777;
-  --color-primary-700: #be185d;
-  --color-primary-800: #9d174d;
-  --color-primary-900: #831843;
+  --color-primary-50: #fef2f2;
+  --color-primary-100: #fee2e2;
+  --color-primary-200: #fecaca;
+  --color-primary-300: #fca5a5;
+  --color-primary-400: #f87171;
+  --color-primary-500: #ef4444;
+  --color-primary-600: #dc2626;
+  --color-primary-700: #b91c1c;
+  --color-primary-800: #991b1b;
+  --color-primary-900: #7c2d12;
   
   --color-gold-50: #fffdf0;
   --color-gold-100: #fefce8;
@@ -35,7 +35,7 @@
 
 @layer components {
   .btn-primary {
-    @apply relative bg-gradient-to-r from-pink-600 via-pink-500 to-purple-600 hover:from-pink-700 hover:via-pink-600 hover:to-purple-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 shadow-lg hover:shadow-2xl hover:shadow-pink-500/50 transform hover:scale-105 active:scale-95 overflow-hidden;
+    @apply relative bg-gradient-to-r from-red-900 via-amber-600 to-amber-500 hover:from-red-800 hover:via-amber-500 hover:to-amber-400 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 shadow-lg hover:shadow-2xl hover:shadow-amber-600/50 transform hover:scale-105 active:scale-95 overflow-hidden;
   }
 
   .btn-primary::before {
@@ -43,33 +43,33 @@
   }
   
   .btn-secondary {
-    @apply relative bg-gradient-to-r from-gray-50 to-gray-100 hover:from-gray-100 hover:to-gray-200 text-gray-800 font-semibold py-3 px-6 rounded-lg transition-all duration-300 shadow-md hover:shadow-lg border-2 border-gray-300 hover:border-pink-500 transform hover:scale-105 active:scale-95;
+    @apply relative bg-gradient-to-r from-gray-50 to-gray-100 hover:from-gray-100 hover:to-gray-200 text-gray-800 font-semibold py-3 px-6 rounded-lg transition-all duration-300 shadow-md hover:shadow-lg border-2 border-gray-300 hover:border-amber-600 transform hover:scale-105 active:scale-95;
   }
 
   .btn-secondary::before {
-    @apply content-[''] absolute inset-0 bg-gradient-to-r from-transparent via-pink-100 to-transparent opacity-0 hover:opacity-30 transition-opacity duration-300;
+    @apply content-[''] absolute inset-0 bg-gradient-to-r from-transparent via-amber-100 to-transparent opacity-0 hover:opacity-30 transition-opacity duration-300;
   }
 
   .btn-outline {
-    @apply relative border-2 border-pink-600 text-pink-600 font-semibold py-3 px-6 rounded-lg bg-white hover:bg-pink-50 transition-all duration-300 shadow-md hover:shadow-lg hover:border-pink-700 transform hover:scale-105 active:scale-95;
+    @apply relative border-2 border-red-900 text-red-900 font-semibold py-3 px-6 rounded-lg bg-white hover:bg-amber-50 transition-all duration-300 shadow-md hover:shadow-lg hover:border-amber-600 transform hover:scale-105 active:scale-95;
   }
 
   .btn-outline::before {
-    @apply content-[''] absolute inset-0 bg-gradient-to-r from-pink-600 to-purple-600 opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-lg;
+    @apply content-[''] absolute inset-0 bg-gradient-to-r from-red-900 to-amber-600 opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-lg;
   }
 
   /* Icon button styles */
   .btn-icon {
-    @apply p-2 rounded-full bg-gradient-to-br from-pink-100 to-purple-100 text-pink-600 hover:text-white hover:bg-gradient-to-br hover:from-pink-600 hover:to-purple-600 transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-110 active:scale-95;
+    @apply p-2 rounded-full bg-gradient-to-br from-amber-100 to-red-100 text-red-900 hover:text-white hover:bg-gradient-to-br hover:from-red-900 hover:to-amber-600 transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-110 active:scale-95;
   }
 
   /* Link button styles */
   .btn-link {
-    @apply text-pink-600 hover:text-pink-700 font-semibold underline-offset-2 hover:underline transition-colors duration-200 relative;
+    @apply text-red-900 hover:text-amber-600 font-semibold underline-offset-2 hover:underline transition-colors duration-200 relative;
   }
 
   .btn-link::after {
-    @apply content-[''] absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-pink-600 to-purple-600 group-hover:w-full transition-all duration-300;
+    @apply content-[''] absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-red-900 to-amber-600 group-hover:w-full transition-all duration-300;
   }
 }
 

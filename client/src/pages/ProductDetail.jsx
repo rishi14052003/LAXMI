@@ -183,7 +183,7 @@ const ProductDetail = () => {
             <div className="space-y-3">
               <button
                 disabled={!saree.inStock}
-                className="w-full bg-gradient-to-r from-pink-600 via-pink-500 to-purple-600 hover:from-pink-700 hover:via-pink-600 hover:to-purple-700 text-white font-semibold py-3 rounded-lg shadow-lg hover:shadow-2xl hover:shadow-pink-500/50 transform hover:scale-105 active:scale-95 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:shadow-lg disabled:hover:scale-100"
+                className="w-full bg-gradient-to-r from-red-900 via-amber-600 to-amber-500 hover:from-red-800 hover:via-amber-500 hover:to-amber-400 text-white font-semibold py-3 rounded-lg shadow-lg hover:shadow-2xl hover:shadow-amber-600/50 transform hover:scale-105 active:scale-95 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:shadow-lg disabled:hover:scale-100"
               >
                 {saree.inStock ? 'View Details' : 'Out of Stock'}
               </button>

@@ -24,7 +24,7 @@ const Navbar = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2">
-              <ShoppingBag className="h-8 w-8 text-pink-600" />
+              <ShoppingBag className="h-8 w-8 text-red-900" />
               <span className="font-playfair text-xl md:text-2xl font-bold text-gray-900">
                 Laxmi Sarees
               </span>
@@ -35,31 +35,31 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-8">
             <Link
               to="/"
-              className="text-gray-700 hover:text-pink-600 px-3 py-2 text-sm font-medium transition-colors"
+              className="text-gray-700 hover:text-red-900 px-3 py-2 text-sm font-medium transition-colors"
             >
               Home
             </Link>
             <Link
               to="/category/silk"
-              className="text-gray-700 hover:text-pink-600 px-3 py-2 text-sm font-medium transition-colors"
+              className="text-gray-700 hover:text-red-900 px-3 py-2 text-sm font-medium transition-colors"
             >
               Silk
             </Link>
             <Link
               to="/category/cotton"
-              className="text-gray-700 hover:text-pink-600 px-3 py-2 text-sm font-medium transition-colors"
+              className="text-gray-700 hover:text-red-900 px-3 py-2 text-sm font-medium transition-colors"
             >
               Cotton
             </Link>
             <Link
               to="/category/bridal"
-              className="text-gray-700 hover:text-pink-600 px-3 py-2 text-sm font-medium transition-colors"
+              className="text-gray-700 hover:text-red-900 px-3 py-2 text-sm font-medium transition-colors"
             >
               Bridal
             </Link>
             <Link
               to="/category/designer"
-              className="text-gray-700 hover:text-pink-600 px-3 py-2 text-sm font-medium transition-colors"
+              className="text-gray-700 hover:text-red-900 px-3 py-2 text-sm font-medium transition-colors"
             >
               Designer
             </Link>
@@ -70,7 +70,7 @@ const Navbar = () => {
                 onClick={() => setShowUserMenu(!showUserMenu)}
                 className="flex items-center space-x-2 px-3 py-2 rounded-lg hover:bg-gray-100 transition-colors"
               >
-                <User className="h-5 w-5 text-pink-600" />
+                <User className="h-5 w-5 text-red-900" />
                 <span className="text-sm font-medium text-gray-700">
                   {user?.fullName || user?.username}
                 </span>
@@ -101,11 +101,11 @@ const Navbar = () => {
               onClick={() => setShowUserMenu(!showUserMenu)}
               className="p-2 rounded-lg hover:bg-gray-100"
             >
-              <User className="h-6 w-6 text-pink-600" />
+              <User className="h-6 w-6 text-red-900" />
             </button>
             <button
               onClick={toggleMenu}
-              className="text-gray-700 hover:text-pink-600 p-2"
+              className="text-gray-700 hover:text-red-900 p-2"
             >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
@@ -133,35 +133,35 @@ const Navbar = () => {
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
               <Link
                 to="/"
-                className="text-gray-700 hover:text-pink-600 block px-3 py-2 text-base font-medium"
+                className="text-gray-700 hover:text-red-900 block px-3 py-2 text-base font-medium"
                 onClick={() => setIsOpen(false)}
               >
                 Home
               </Link>
               <Link
                 to="/category/silk"
-                className="text-gray-700 hover:text-pink-600 block px-3 py-2 text-base font-medium"
+                className="text-gray-700 hover:text-red-900 block px-3 py-2 text-base font-medium"
                 onClick={() => setIsOpen(false)}
               >
                 Silk
               </Link>
               <Link
                 to="/category/cotton"
-                className="text-gray-700 hover:text-pink-600 block px-3 py-2 text-base font-medium"
+                className="text-gray-700 hover:text-red-900 block px-3 py-2 text-base font-medium"
                 onClick={() => setIsOpen(false)}
               >
                 Cotton
               </Link>
               <Link
                 to="/category/bridal"
-                className="text-gray-700 hover:text-pink-600 block px-3 py-2 text-base font-medium"
+                className="text-gray-700 hover:text-red-900 block px-3 py-2 text-base font-medium"
                 onClick={() => setIsOpen(false)}
               >
                 Bridal
               </Link>
               <Link
                 to="/category/designer"
-                className="text-gray-700 hover:text-pink-600 block px-3 py-2 text-base font-medium"
+                className="text-gray-700 hover:text-red-900 block px-3 py-2 text-base font-medium"
                 onClick={() => setIsOpen(false)}
               >
                 Designer
