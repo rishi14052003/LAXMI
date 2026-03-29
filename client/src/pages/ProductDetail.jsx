@@ -182,17 +182,17 @@ const ProductDetail = () => {
             {/* Action Buttons */}
             <div className="space-y-3">
               <button
-                onClick={handleWhatsAppInquiry}
                 disabled={!saree.inStock}
-                className="w-full btn-primary disabled:opacity-50 disabled:cursor-not-allowed"
-              >
-                {saree.inStock ? 'Inquire on WhatsApp' : 'Out of Stock'}
-              </button>
-              disabled={!saree.inStock}
-                className="w-full bg-gradient-to-r from-pink-600 to-purple-600 text-white font-semibold py-3 rounded-lg hover:shadow-lg transform hover:scale-105 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full bg-gradient-to-r from-pink-600 via-pink-500 to-purple-600 hover:from-pink-700 hover:via-pink-600 hover:to-purple-700 text-white font-semibold py-3 rounded-lg shadow-lg hover:shadow-2xl hover:shadow-pink-500/50 transform hover:scale-105 active:scale-95 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:shadow-lg disabled:hover:scale-100"
               >
                 {saree.inStock ? 'View Details' : 'Out of Stock'}
-              </button <Truck className="h-5 w-5 text-gray-400" />
+              </button>
+            </div>
+
+            {/* Features */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 py-6 border-t border-b">
+              <div className="flex items-center space-x-2">
+                <Truck className="h-5 w-5 text-gray-400" />
                 <div>
                   <p className="text-sm font-medium text-gray-900">Free Shipping</p>
                   <p className="text-xs text-gray-500">On orders above ₹2000</p>

@@ -35,10 +35,41 @@
 
 @layer components {
   .btn-primary {
-    @apply bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200;
+    @apply relative bg-gradient-to-r from-pink-600 via-pink-500 to-purple-600 hover:from-pink-700 hover:via-pink-600 hover:to-purple-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 shadow-lg hover:shadow-2xl hover:shadow-pink-500/50 transform hover:scale-105 active:scale-95 overflow-hidden;
+  }
+
+  .btn-primary::before {
+    @apply content-[''] absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 hover:opacity-20 transition-opacity duration-300;
   }
   
   .btn-secondary {
-    @apply bg-gray-100 hover:bg-gray-200 text-gray-800 font-medium py-3 px-6 rounded-lg transition-colors duration-200;
+    @apply relative bg-gradient-to-r from-gray-50 to-gray-100 hover:from-gray-100 hover:to-gray-200 text-gray-800 font-semibold py-3 px-6 rounded-lg transition-all duration-300 shadow-md hover:shadow-lg border-2 border-gray-300 hover:border-pink-500 transform hover:scale-105 active:scale-95;
+  }
+
+  .btn-secondary::before {
+    @apply content-[''] absolute inset-0 bg-gradient-to-r from-transparent via-pink-100 to-transparent opacity-0 hover:opacity-30 transition-opacity duration-300;
+  }
+
+  .btn-outline {
+    @apply relative border-2 border-pink-600 text-pink-600 font-semibold py-3 px-6 rounded-lg bg-white hover:bg-pink-50 transition-all duration-300 shadow-md hover:shadow-lg hover:border-pink-700 transform hover:scale-105 active:scale-95;
+  }
+
+  .btn-outline::before {
+    @apply content-[''] absolute inset-0 bg-gradient-to-r from-pink-600 to-purple-600 opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-lg;
+  }
+
+  /* Icon button styles */
+  .btn-icon {
+    @apply p-2 rounded-full bg-gradient-to-br from-pink-100 to-purple-100 text-pink-600 hover:text-white hover:bg-gradient-to-br hover:from-pink-600 hover:to-purple-600 transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-110 active:scale-95;
+  }
+
+  /* Link button styles */
+  .btn-link {
+    @apply text-pink-600 hover:text-pink-700 font-semibold underline-offset-2 hover:underline transition-colors duration-200 relative;
+  }
+
+  .btn-link::after {
+    @apply content-[''] absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-pink-600 to-purple-600 group-hover:w-full transition-all duration-300;
   }
 }
+
