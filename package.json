@@ -1,16 +1,6 @@
 {
-  "name": "saree-catalog",
+  "name": "saree-catalog-root",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
-  "workspaces": [
-    "client",
-    "server"
-  ],
-  "scripts": {
-    "dev": "npm run dev --workspace=client",
-    "build": "npm run build --workspace=client",
-    "lint": "npm run lint --workspace=client",
-    "preview": "npm run preview --workspace=client"
-  }
+  "description": "Saree Catalog - Root Package"
 }

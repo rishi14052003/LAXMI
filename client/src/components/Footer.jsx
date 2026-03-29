@@ -6,24 +6,8 @@ const Footer = () => {
     address: "123 Fashion Street, Market Area, New Delhi - 110001, India",
     phone: "+91 98765 43210",
     email: "info@laxmisarees.com",
-    hours: "Mon-Sat: 10:00 AM - 8:00 PM, Sunday: 11:00 AM - 6:00 PM"
+    hours: "Mon-Sat: 10:00 AM - 8:00 PM"
   };
-
-  const partners = [
-    {
-      name: "Hitesh Jain",
-      role: "Managing Partner",
-      phone: "+91 75199 99999",
-      email: "hitesh@laxmisarees.com"
-    },
-    {
-      name: "Dipesh Jain",
-      role: "Partner", 
-      phone: "+91 99988 75420",
-      email: "dipesh@laxmisarees.com"
-    }
-  ];
-
   const quickLinks = [
     { name: 'About Us', href: '#about' },
     { name: 'Collections', href: '#collections' },
@@ -79,19 +63,6 @@ const Footer = () => {
                 <Clock className="h-5 w-5 text-yellow-400 mt-0.5 flex-shrink-0" />
                 <span className="text-sm text-gray-300">{shopInfo.hours}</span>
               </div>
-            </div>
-            
-            {/* Social Media */}
-            <div className="flex space-x-3 mt-6">
-              <a href="#" className="bg-gray-800 p-2 rounded-full hover:bg-yellow-400 transition-colors">
-                <Facebook className="h-4 w-4" />
-              </a>
-              <a href="#" className="bg-gray-800 p-2 rounded-full hover:bg-yellow-400 transition-colors">
-                <Instagram className="h-4 w-4" />
-              </a>
-              <a href="#" className="bg-gray-800 p-2 rounded-full hover:bg-yellow-400 transition-colors">
-                <Twitter className="h-4 w-4" />
-              </a>
             </div>
           </div>
 
