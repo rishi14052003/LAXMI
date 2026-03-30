@@ -55,10 +55,10 @@ const Dashboard = () => {
   ];
 
   const recentOrders = [
-    { id: '#3210', customer: 'John Doe', amount: '$89.00', status: 'completed', date: '2024-01-15' },
-    { id: '#3209', customer: 'Jane Smith', amount: '$156.00', status: 'processing', date: '2024-01-15' },
-    { id: '#3208', customer: 'Bob Johnson', amount: '$234.00', status: 'pending', date: '2024-01-14' },
-    { id: '#3207', customer: 'Alice Brown', amount: '$67.00', status: 'completed', date: '2024-01-14' },
+    { id: '#3210', customer: 'John Doe', amount: '$89.00', status: 'completed', date: '2004-01-15' },
+    { id: '#3209', customer: 'Jane Smith', amount: '$156.00', status: 'processing', date: '2004-01-15' },
+    { id: '#3208', customer: 'Bob Johnson', amount: '$234.00', status: 'pending', date: '2004-01-14' },
+    { id: '#3207', customer: 'Alice Brown', amount: '$67.00', status: 'completed', date: '2004-01-14' },
   ];
 
   const chartData = [

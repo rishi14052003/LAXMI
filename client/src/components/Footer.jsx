@@ -6,21 +6,21 @@ const Footer = () => {
       name: 'Priya Sharma',
       role: 'Regional Manager',
       phone: '+91 9876543210',
-      email: 'priya@laxmisarees.com'
+      email: 'siddh2606@gmail.com'
     },
     {
       name: 'Rajesh Patel',
       role: 'Sales Lead',
       phone: '+91 9876543211',
-      email: 'rajesh@laxmisarees.com'
+      email: 'siddh2606@gmail.com'
     }
   ];
 
   const shopInfo = {
     name: "Laxmi Sarees",
-    address: "123 Fashion Street, Market Area, New Delhi - 110001, India",
-    phone: "+91 98765 43210",
-    email: "info@laxmisarees.com",
+    address: "R-3105 STM RING ROAD , NEW TEXTILE MARKET AREA , SURAT , GUJARAT , INDIA",
+    phone: "+91 9099999309",
+    email: "siddh2606@gmail.com",
     hours: "Mon-Sat: 10:00 AM - 8:00 PM"
   };
   const quickLinks = [
@@ -145,7 +145,7 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-sm text-gray-400 mb-4 md:mb-0">
-              © 2024 {shopInfo.name}. All rights reserved.
+              © 2004 {shopInfo.name}. All rights reserved.
             </div>
             <div className="flex space-x-6">
               <a href="#privacy" className="text-sm text-gray-400 hover:text-yellow-400 transition-colors">
